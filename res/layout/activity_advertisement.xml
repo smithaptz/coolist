@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/advertisementLinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="20"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/advertisementLinearLayout05"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/advertisementProgressBar01"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/advertisementImageView06"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/refresh" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/advertisementLinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/advertisementLinearLayout03"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|bottom" >
+
+            <ImageView
+                android:id="@+id/advertisementImageView01"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/info" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/advertisementLinearLayout04"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/advertisementImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/like_undone" />
+
+            <ImageView
+                android:id="@+id/advertisementImageView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/share_undone" />
+
+            <ImageView
+                android:id="@+id/advertisementImageView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/signup_undone" />
+
+            <ImageView
+                android:id="@+id/advertisementImageView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/download_undone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

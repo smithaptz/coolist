@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/shopRelativeLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" >
+
+            <ImageView
+                android:id="@+id/shopImageView01"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/shop_icon_default" />
+
+            <TextView
+                android:id="@+id/shopTextView03"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/shopImageView02"
+                android:background="@drawable/point_background"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/shopImageView02"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/service_unavailable" />
+
+            <TextView
+                android:id="@+id/shopTextView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/shopImageView01"
+                android:layout_marginLeft="15dp"
+                android:layout_toLeftOf="@+id/shopTextView03"
+                android:layout_toRightOf="@+id/shopImageView01"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:id="@+id/shopTextView02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/shopImageView01"
+                android:layout_alignLeft="@+id/shopTextView01"
+                android:layout_alignRight="@+id/shopTextView01"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="#ff000000" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/shopImageView03"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/button_expand" />
+
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/shopWebView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shopListView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:cacheColorHint="#ffffffff"
+        android:divider="#ffffffff" >
+
+    </ListView>
+
+</LinearLayout>

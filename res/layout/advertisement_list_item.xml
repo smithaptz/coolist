@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/advertisementListItemRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/point_background"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/advertisementListItemTextView02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffffffff" />
+
+            <ProgressBar
+                android:id="@+id/advertisementListItemProgressBar01"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/advertisementListItemTextView01"
+            android:layout_below="@+id/advertisementListItemTextView01"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/advertisementListItemImageView02"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="40dp"
+                android:maxWidth="40dp"
+                android:src="@drawable/like_undone" />
+
+            <ImageView
+                android:id="@+id/advertisementListItemImageView03"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="40dp"
+                android:maxWidth="40dp"
+                android:src="@drawable/share_undone" />
+
+            <ImageView
+                android:id="@+id/advertisementListItemImageView04"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="40dp"
+                android:maxWidth="40dp"
+                android:src="@drawable/signup_undone" />
+
+            <ImageView
+                android:id="@+id/advertisementListItemImageView05"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="40dp"
+                android:maxWidth="40dp"
+                android:src="@drawable/download_undone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/advertisementListItemImageView01"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="65dp"
+            android:maxWidth="65dp"
+            android:src="@drawable/default_icon" />
+
+        <TextView
+            android:id="@+id/advertisementListItemTextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/advertisementListItemImageView01"
+            android:layout_marginLeft="18dp"
+            android:layout_toLeftOf="@+id/linearLayout2"
+            android:layout_toRightOf="@+id/advertisementListItemImageView01"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Text View"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff000000" />
+
+    </RelativeLayout>
+
+</LinearLayout>
